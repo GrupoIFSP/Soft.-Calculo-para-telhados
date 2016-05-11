@@ -1,6 +1,6 @@
 # Trabalho-APO-Software-TELHAS
 
-11-05-2016 - Jean Silva - Iniciei as postagens e criei fluxo de trabalho.
+11-05-2016 - Jean Silva - Pule sempre uma linha para não desalinhar as atualizações. (Apague essa)
 
 11-05-2016 - Jean Silva - Iniciei as postagens e criei fluxo de trabalho.
 
