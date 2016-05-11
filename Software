@@ -1,54 +1,78 @@
+/*
+Então pessoal cada parte editada do código terá que ser anotada no campo abaixo. E não esqueçam
+de comentar o codigo, isso irá nos ajudar a intender o código.
+
+Eu testei aqui e esta funcionando normalmente, creio que no de vocês irá funcionar também.
+Copiem o codigo e testem sempre antes de editar, se o programa não rodar, não saia procurando
+defeitos, de repente alguém esta mexendo e você copiou nesta hora. Faça contato com o grupo e
+verifique se alguém esta mexendo com o código.
+
+Outra coisa Importante é, seguir algumas regras.
+    Não deletar, rasurar ou qualquer outra coisa que possa afetar o grupo, mesmo que seja sem querer, por engano,
+    por problemas pessoais ou etc. Mantendo sempre compromisso com nosso objetivo.
+    Sempre que modificar o código informar no espaço reservado a modificação. Temos um bloco de nota externo README.
+    No código sempre deixe anotado suas iniciais nos códigos alterado por você. Exemplo  "J.F - 11/05/2016"
+    Manter foco no objetivo.
+    Sempre testar o codigo no seu computador antes de subir ele pro portal.
+    Se no seu computador não funcionar use outros meios de comunicação, para comunicar a equipe e todos testarem junto antes
+    de subir para o portal. Não suba arquivos que não funciona no seu computador.
+    
+Qualquer dúvida da utilização me chamem no Whats app 19 99225-3729
+
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <conio.h>
 
-float calculo(float larg, float comp)
+float calculo(float larg, float comp) // Aqui é a função separada para realizar calculos. Crie uma para cada calculo.
 {
     float area2;
 
     area2 = (larg*2)+(comp*2);
     return area2;
 }
-int main()
+int main() // Inicio do código
 {
-    float larg,comp,oper;
+    float larg,comp,oper; //Variavéis
 
-    printf("\t\tInforme o comprimento do telhado: \n\t\t");
-    scanf("%f", &comp);
+    printf("\t\tInforme o comprimento do telhado: \n\t\t"); // Entrada
+    scanf("%f", &comp); // Salvando na variavel
 
-    printf("\t\tInforme a largura do telhado: \n\t\t");
-    scanf("%f", &larg);
+    printf("\t\tInforme a largura do telhado: \n\t\t"); // Entrada
+    scanf("%f", &larg); // Salvando na variavel
 
-    oper = calculo(comp,larg);
+    oper = calculo(comp,larg); // Aqui esta recebendo o valor do calculo feito dentro da função Calculo.
 
-    printf("\t\tVoce possui: %.2f m2, \n\n\t\t\tEscolha o tipo de telha desejada \n\t\t", oper);
+    printf("\t\tVoce possui: %.2f m2, \n\n\t\t\tEscolha o tipo de telha desejada \n\t\t", oper); // Entrada de tipos de telhas
 
         printf("\n\t\t(1)- Telha unitaria, com 30CM de Largura e 10CM de Comprimento\n\t\t");
         printf("\n\t\t(2)- Telha Brasilit, com 2,30CM de Largura e 1,10CM de compimento\n\t\t");
 
-   int esc;
-        scanf("%d", &esc);
+   int esc; // Aqui estamos criando uma variavel dentro do código. O C nos permite isso. Ela é inteira
+        scanf("%d", &esc); // Aqui esta lendo a escolha feita
 
-    switch(esc)
+    switch(esc) // Escolha caso. Em cima da escolha do cliente.
     {
 
         case 1:
         {
-            printf("\t\tvoce escolheu a opcao 1");
+            printf("\t\tvoce escolheu a opcao 1"); // Resultado telha tipo 1
             break;
         }
         case 2:
         {
-            printf("\t\tVoce escolheu a opcao 2");
+            printf("\t\tVoce escolheu a opcao 2"); // Resultado telha tipo 2
             break;
         }
         default:
          {
-              printf("\t\tPor favor escolha uma das opcoes");
+              printf("\t\tPor favor escolha uma das opcoes"); // Resultado caso escolha esteja errada
 
 
          }
     }
 
 }
+
 
