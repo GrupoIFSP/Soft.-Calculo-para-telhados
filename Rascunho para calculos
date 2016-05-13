@@ -1,0 +1,28 @@
+pergunta a altura
+pergunta a largura
+pergunta o comprimento
+pergunta quantas caidas o telhado tera (max. 2)
+
+x=largura/quantidade_de_queda //para evitar ter que fazer o case para a quantidade de telhas coloquei em conta
+
+hip=(raiz quadrada)x²+altura²
+
+area_do_telhado=hip*cumprimento
+
+angulo_telhado=largura/hip  
+cos(angulo_do_telhado)   //isso vai dar o angulo do telhado para saber qual a telha recomendada (acho)
+
+apresenta telhas adequadas //ex. 1-telha colonial   2-telha americana
+pergunta qual a telha de preferencia
+
+quantidade_telhas=area_telhado/area_telha_escolhida
+quantidade_telhas1=cumprimento/cumprimento_telha_colonial
+
+telha_total=(quantidade_telha+quantidade_telha1)*quantidade_de_queda // aqui ele vai multiplicar oque diviu antes, evitando o case
+
+peso=quantidade_telha*peso_telha_escolhida
+peso1=quantidade_telha_colonial*peso_telha_colonial
+peso_TOTAL=peso+peso1
+
+apresenta quantidade de telhas(telha_total)
+apresenta peso do telhado(peso_total)
