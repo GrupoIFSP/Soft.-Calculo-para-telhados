@@ -17,6 +17,14 @@ pergunta a largura
 pergunta o comprimento
 pergunta quantas caidas o telhado tera (max. 2)
 
+--------
+Calculos para madeiras e telhas em quantidade.
+
+metro quadrado * 0,03 = Quantos metros linear de ripamento.
+metro de comprimento * 2 = Quantidade de caibros 
+metro quadrado * 17 = Quantidade de telhas
+--------
+
 x = largura/quantidade_de_queda //para evitar ter que fazer o case para a quantidade de telhas coloquei em conta
 
 hip = (raiz quadrada)x²+altura²
